@@ -74,6 +74,8 @@ def convert_data_types(df: pd.DataFrame) -> pd.DataFrame:
 ##################################################
 
 url = "https://map.datacente.rs/api/geo/world"
+# Note: Alternative dataset (n=5238) is available at: https://www.datacenters.com/locations
+
 response = requests.get(url)
 
 if response.status_code == 200:
